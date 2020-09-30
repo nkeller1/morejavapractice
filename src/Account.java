@@ -8,6 +8,8 @@ public class Account {
 
         a.setName("Pablo");
         a.setAge(34);
+        System.out.println(a.getName());
+        System.out.println(a.getAge());
 
         a.printDetails();
     }
@@ -20,7 +22,15 @@ public class Account {
         this.age = age;
     }
 
+    public String getName() {
+        return this.name;
+    }
+
+    public Integer getAge() {
+        return this.age;
+    }
+
     public void printDetails(){
-        System.out.println(name + ", " + age);
+        System.out.println(getName() + ", " + getAge());
     }
 }
